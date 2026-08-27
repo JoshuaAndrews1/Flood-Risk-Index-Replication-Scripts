@@ -1,7 +1,6 @@
 # flood-risk-index
 
-Code for "Mapping Multidimensional Flood Risk in the United States and Its
-Socioeconomic Relevance for Local Business Dynamics."
+Code for "Mapping Multidimensional Flood Risk and Socioeconomic Relevance to Local Business Dynamics Across the United States."
 
 This repository contains the scripts needed to reproduce the paper's full-period
 (2006-2024) flood risk index, its robustness checks, spatial autocorrelation analysis,
