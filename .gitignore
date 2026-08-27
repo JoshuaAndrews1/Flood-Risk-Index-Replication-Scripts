@@ -1,0 +1,7 @@
+# Data is hosted on Zenodo, not in this repo -- see README.md for download instructions.
+/data/
+
+__pycache__/
+*.pyc
+.venv/
+venv/
