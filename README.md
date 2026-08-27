@@ -25,14 +25,12 @@ Unzip both at the repo root so you end up with:
 ```
 flood-risk-index/
   data/
-    reconstruction/    <- from data_reconstruction.zip
-    results/            <- from data_results.zip
+    reconstruction/   <- from data_reconstruction.zip
+    results/           <- from data_results.zip
   scripts/
   ...
 ```
 
-`data/` is git-ignored, so extracting the archives there will not create anything for
-git to track.
 
 ## Directory layout
 
@@ -106,18 +104,7 @@ annotated in-file with what it needs and where its output already appears in
   file *are* included in the Zenodo `data_reconstruction.zip`, since they are required
   directly by several essential scripts)
 
-## Known gap: business dynamics regression code
 
-The paper's business-dynamics regression results (combined flood risk index and its
-components regressed on county-level firms, establishments, employment, establishment
-entry, and job creation, with county + period fixed effects and county-clustered
-standard errors) were **not found as a script** in the source project at the time this
-repository was assembled. `08_business_dynamics_data_prep/` contains only the two
-scripts that build the merged CBP/BDS county-year panel (shipped as
-`data/reconstruction/SocioEconomicData/CBPBDSMerged/merged_*.csv` on Zenodo); the
-regression itself needs to be located or rewritten (e.g. with `linearmodels.PanelOLS`)
-before this section of the paper is independently reproducible from this repository
-alone.
 
 ## Requirements
 
@@ -125,5 +112,4 @@ alone.
 pip install -r requirements.txt
 ```
 
-`01_extract/extract_nlcd_farmland.py` additionally needs `rasterstats`, and
-`06_maps/MetroAreaIndexMaps.py` needs `pyproj`/`shapely` (both already listed).
+
